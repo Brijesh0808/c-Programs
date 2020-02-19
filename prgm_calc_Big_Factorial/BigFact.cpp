@@ -21,7 +21,7 @@ using namespace std;
 
 #define size 1000000
 
-void putNumRevInArr(int res[], int n)	//Put the palindrome of the number in array
+void putNumRevInArr(int res[], int n)			//Put the palindrome of the number in array
 {
     int i=0;
     while(n)
@@ -60,14 +60,14 @@ int main()
 {
     ofstream myobj;
 	int n;
-	cin>>n;							//Fact number
+	cin>>n;						//Fact number
 
 	int res[size];					//Array to store final result
-	fill_n(res, size, -1);			//Array res assigned values -1
+	fill_n(res, size, -1);				//Array res assigned values -1
 
 	int dummy[size];				//Used for saving mul. res. of two nos.
 
-	putNumRevInArr(res,n);          //To put the number in reverse in the array
+	putNumRevInArr(res,n);          		//To put the number in reverse in the array
 
 	--n;
 
@@ -75,9 +75,9 @@ int main()
 	{
 		int carry=0;
 		int j=0;
-		int num=0;					//Number to be formed after final multiplication of 2 nos. for eg 15*20, num = 300
+		int num=0;				//Number to be formed after final multiplication of 2 nos. for eg 15*20, num = 300
 
-		fill_n(dummy, size, -1);	//Assigning -1 to whole array @ every multiplication step with a new no.
+		fill_n(dummy, size, -1);		//Assigning -1 to whole array @ every multiplication step with a new no.
 
 		while(res[j]!=-1)			//For calculating multiplication of the 2 nos for facto
 		{
@@ -98,7 +98,7 @@ int main()
 		copy(dummy, res);
 	}
 
-	int count = dispNumInRev(res);					//Display the number in reverse
+	int count = dispNumInRev(res);			//Display the number in reverse
 	//countDigits(res);
 
 	cout<<"\n\ncount = "<<count<<endl;
