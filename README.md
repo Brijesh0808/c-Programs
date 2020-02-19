@@ -1,4 +1,4 @@
-# hello-world
+# hello-people
 This is my first self created Repository on GitHub.
 
-My name is Brijesh and Currently learning Python to enter in DataScience field.
+This repo is having some basic c++ programs that I wrote by scratch
